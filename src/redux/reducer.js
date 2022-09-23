@@ -10,7 +10,6 @@ import {
   SEND_MESSAGE,
   ADD_CONTACT,
   DELETE_CONTACT,
-  SET_LOADING,
 } from "./types";
 import { generateRandomId } from "../utils";
 
@@ -68,6 +67,7 @@ export function reducer(state = getItem("store") || initialState, action) {
       const user = {
         id: generateRandomId(64),
         userName: action.payload,
+        blocked: [2, 6],
       };
 
       const newState = { ...state, user, screenMode: 4 };

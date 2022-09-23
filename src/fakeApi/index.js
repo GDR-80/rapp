@@ -1,5 +1,5 @@
 //define the data structure
-export const user = {};
+export const user = {  };
 
 export const allUsers = [
   { id: 1, userName: "Sally", image: "" },
